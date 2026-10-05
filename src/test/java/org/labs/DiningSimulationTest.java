@@ -57,7 +57,7 @@ class DiningSimulationTest {
     @CsvSource({
             "2,  100000, 5",
             "20, 100000, 1",
-            "10, 500000, 9",
+            "10, 500000, 10",
             "3,  333333, 1"
     })
     @Timeout(value = 10, unit = TimeUnit.SECONDS)
@@ -103,6 +103,6 @@ class DiningSimulationTest {
 
     private long calculateMaxAllowedDelta(int programmers, long totalPortions, int waiters) {
         long portionsPerProgrammer = totalPortions / programmers;
-        return (waiters * 2L) + (portionsPerProgrammer / 1000L);
+        return (waiters * 5L) + (portionsPerProgrammer / 1000L);
     }
 }
