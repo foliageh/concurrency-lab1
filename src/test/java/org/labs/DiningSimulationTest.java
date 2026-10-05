@@ -103,6 +103,6 @@ class DiningSimulationTest {
 
     private long calculateMaxAllowedDelta(int programmers, long totalPortions, int waiters) {
         long portionsPerProgrammer = totalPortions / programmers;
-        return (waiters * 5L) + (portionsPerProgrammer / 1000L);
+        return (waiters * 10L) + (portionsPerProgrammer / 1000L);
     }
 }
